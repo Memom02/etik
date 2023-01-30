@@ -48,8 +48,16 @@
       },
       "komutlar": {
          "description":"Kömək menyusu",
-          "value": "Salam **ElectroTaggerBot** Kömək Menyusuna xoş gəlmisiniz 🗽\n/tag <Mesajınız> - istifadəçiləri 5 li Tağ edərəm\n/admintag <Sizin Mesaj> - Yalnız adminləri Tağ Edərəm\n/tektag <Sizin Mesaj> - Tək-Tək Tağ Edərəm\n/etag <Sizin mesaj> - İstifadəçiləri emoji ilə Tağ Edərəm\n/stag <Mesajınız> - İstifadəçiləri mənalı sözlərlə Tağ Edərəm\n/rtag <Mesajınız> - İstifadəçiləri rənglərlə Tağ Edərəm\n/cancel - Taq prosesini Dayandıraram.\n❕ Məndən Yalnız Adminlər İstifadə Edə Bilər . ✨"
-      },
+          "value": "Selam **Black** Komut Menüsüne Hoş Geldiniz.. 🗽\nSelam Black Komut menüsüne hoşgeldiniz  〽️▪️/tag <Mesajınız> - Üyelere 5'li etiket atar
+▪/atag <Sizin Mesaj> - Yalnız adminleri etiketler
+▪/tektag <Sizin Mesaj> - Üyeleri tek tek etiketler 
+▪️/etag <Sizin mesaj> - Üyeleri emoji ile etiketler
+▪️/stag <Mesajınız> - Üyelere soru sorarak etiket atar
+▪️/rtag <Mesajınız> - Üyeleri renklerle etiketler
+▪️/mtag - <mesajınız> - Üyleri manalı sözlerle etiketle
+▪️/btag - Bayrak ile etiker atar.
+▪️/ktag - sembollerle etiket atar▪/sor - Üyelere random soru sorar▪️/cancel - Etiket işlemini durdurur.❕Komutları sadece adminler kullanabilir! 
+  },
       "ozel_list": {
          "description": "sudo kullanıcısı id si",
          "value": "5074483091"
