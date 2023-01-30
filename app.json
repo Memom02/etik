@@ -5,10 +5,10 @@
          "telegram",
          "tagger",
          "group",
-         "mutsuz_panda",
-         "Richard_Ramirezzblog"
+         "memokra",
+         "black"
       ],   
-   "repository": "https://github.com/Gecekus/ElectroTaggerBot",
+   "repository": "https://github.com/memom02/eti",
    "env": {
       "TOKEN": {
          "description": "Botunuzun tokenini bura yazın",
@@ -24,19 +24,19 @@
       },
       "USERNAME": {
          "description": "Botun kullanıcı adı yazınız @ işareti olmadan",
-         "value": "ElectroTaggerBot"
+         "value": "blacketiketbot"
       },
       "sahib": {
          "description": "Kendi kullanıcı adınızı yazınız @ işareti olmadan",
-         "value": "HuseynH"
+         "value": "memokra"
       },      
       "support": {
          "description": "Bura support grubunuz yada kanalınızın kullanıcı adı @ işareti olmadan yazın",
-         "value": "MusicAzPlaylist"
+         "value": "blackbotdestek"
       },      
       "group": {
          "description": "Bura grubunuz yada kanalınızın kullanıcı adı @ işareti olmadan yazın",
-         "value": "MusicAz"
+         "value": "blackbotdestek"
       },
       "startmesaj": {
          "description": "Bota start verilince mesajınız",
