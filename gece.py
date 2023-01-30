@@ -43,12 +43,12 @@ async def start(event):
      await client.send_message(-1001856291634, f"ℹ️ **Yeni Kullanıcı -** {ad}")
      await event.reply(f"{ad} {startmesaj}", buttons=(
                       [
-                       Button.inline("✍ Komutlar", data="help")
+                       Button.inline("✍ ᴋᴏᴍᴜᴛʟᴀʀ", data="help")
                       ],
-                      [Button.url('🌱 Beni Gruba Ekle', f'https://t.me/{USERNAME}?startgroup=a')],
-                     [Button.url('📣 Oyun Botumuz', f'https://t.me/blackgameebot')],
-                      [Button.url('📣 Kanal', f'https://t.me/{support}')],
-                       [Button.url('👨🏻‍💻 Sahip', f'https://t.me/{sahib}')]
+                      [Button.url('🌱 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ', f'https://t.me/{USERNAME}?startgroup=a')],
+                     [Button.url('📣 ᴏʏᴜɴ ʙᴏᴛᴜᴍᴜᴢ', f'https://t.me/blackgameebot')],
+                      [Button.url('📣 ᴋᴀɴᴀʟ', f'https://t.me/{support}')],
+                       [Button.url('👨🏻‍💻 sᴀʜɪᴘ👨🏻‍💻', f'https://t.me/{sahib}')]
                     ),
                     link_preview=False)
 
@@ -63,12 +63,12 @@ async def handler(event):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
     return await event.reply(f"{ad} {startmesaj}", buttons=(
                       [
-                       Button.inline("✍ Komutlar", data="help")
+                       Button.inline("✍ ᴋᴏᴍᴜᴛʟᴀʀ", data="help")
                       ],
-                      [Button.url('🌱 Beni Gruba Ekle', f'https://t.me/{USERNAME}?startgroup=a')],
-                     [Button.url('📣 Oyun Botumuz', f'https://t.me/blackgameebot')],
-                      [Button.url('📣 Kanal', f'https://t.me/{support}')],
-                       [Button.url('👨🏻‍💻 Sahip', f'https://t.me/{sahib}')]
+                      [Button.url('🌱 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ', f'https://t.me/{USERNAME}?startgroup=a')],
+                     [Button.url('📣 ᴏʏᴜɴ ʙᴏᴛᴜᴍᴜᴢ', f'https://t.me/blackgameebot')],
+                      [Button.url('📣 ᴋᴀɴᴀʟ', f'https://t.me/{support}')],
+                       [Button.url('👨🏻‍💻 sᴀʜɪᴘ👨🏻‍💻', f'https://t.me/{sahib}')]
                     ),
                     link_preview=False)
 
