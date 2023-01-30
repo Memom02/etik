@@ -1030,12 +1030,42 @@ black =(
 'Kendini anlatsana biraz 😉',
 'Seni tanıyalım artık 😉 başla hadi 😁',
 'Orda havalar nasıl 🥶',
+'Nasılsın 🙄',
+'Nerdesin 🥲',
+'Gruba gelmiyorsun hiç 🥲',
+'Özlettin kendini gelsene 👀',
+'Naber ya 🙃',
+'Mutlu olmayı hak ediyorsun bence 😁',
+'Herşey yolunda mı ☺️',
+'Bir selam ver güneş doğsun 😁😁',
+'Hayat yordu bizi 🥲',
+'Sen nasıl bir insansın? 🙃',
+'Grup sensiz olmaz ☺️',
+'İyi ki burdasın 🥰',
+'Muhabbetini özledik 🤗',
+'Sohbet edelim mi 🙃',
+'Kendini tanıtır mısın 👀',
+'Hasta mısın yoksun 😪',
+'Havalar nasıl orda 🥶',
+'İyi ki varsın 🥰',
+'Bana bi soru sor 🙃🙃',
+'Günün nasıl geçiyor 😋',
+'Akşam napıyosun ☺️',
+'Bu gün ki planın ne 😋',
+'Yemekte ne vardı 🙃',
+'Çay olsa da içsek 🤧',
+'Spor yapıyor musun 🏃',
+'Yemek yapmayı biliyor musun 🙄',
+'Hangi takımı tutuyorsun 😉',
+'Nerelerdesin ya 👀',
+'Çizgi film sever misin 👻',
+'Bana bi film önersene 🙄',
 
 )
 
 
-@client.on(events.NewMessage(pattern="^/baybars ?(.*)"))
-async def baybars(event):
+@client.on(events.NewMessage(pattern="^/vtag ?(.*)"))
+async def vtag(event):
   global gece_tag
   if event.is_private:
     return await event.respond(f"{noqrup}")
@@ -1060,7 +1090,7 @@ async def baybars(event):
     return await event.respond("__Etiket atmam için birşeyler yaz kanka!__")
     
   if mode == "text_on_cmd":
-    await client.send_message(event.chat_id, "❄️ Etiket başladı\n⏱️ İnterval - 10 saniye",
+    await client.send_message(event.chat_id, "❄️ Etiket başladı\n⏱️ İnterval - 15 saniye",
                     buttons=(
                       [
                        Button.url('📣 Support', f'https://t.me/{support}')
@@ -1084,7 +1114,7 @@ async def baybars(event):
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"**{usrtxt}** {random.choice(black)}")
-        await asyncio.sleep(10)
+        await asyncio.sleep(15)
         usrnum = 0
         usrtxt = ""
 
