@@ -61,7 +61,7 @@ async def start(event):
 async def handler(event):
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await event.edit(f"{ad} {startmesaj}", buttons=(
+    return await event.reply(f"{ad} {startmesaj}", buttons=(
                       [
                        Button.inline("✍ Komutlar", data="help")
                       ],
