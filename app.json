@@ -34,33 +34,21 @@
          "description": "Bura support grubunuz yada kanalınızın kullanıcı adı @ işareti olmadan yazın",
          "value": "blackbotdestek"
       },      
-      "group": {
-         "description": "Bura grubunuz yada kanalınızın kullanıcı adı @ işareti olmadan yazın",
-         "value": "blackbotdestek"
-      },
-      "startmesaj": {
+       "startmesaj": {
          "description": "Bota start verilince mesajınız",
-         "value": "**Salam** __Qrup və ya kanalın demək olar ki, hər bir üzvünə müraciət edə bilərəm ★__"
+         "value": "**Selam** **sᴏʀᴜʏʟᴀ ᴇᴛɪᴋᴇᴛ ᴀᴛᴀɴ ᴛᴇᴋ ᴇᴛɪᴋᴇᴛ ʙᴏᴛᴜʏᴜᴍ**★__\n**ɢʀᴜᴘ ᴠᴇ ᴋᴀɴᴀʟʟᴀʀᴅᴀ ғᴀʀᴋʟı ᴍᴏᴅᴜ̈ʟʟᴇʀᴅᴇ sɪᴢɪɴ ɪᴄ̧ɪɴ ᴜ̈ʏᴇʟᴇʀɪ ᴇᴛɪᴋᴇᴛʟᴇᴍᴇᴋ ɪᴄ̧ɪɴ ʙᴜʀᴅᴀʏıᴍ**"
       },
       "qrupstart": {
-         "description": "Qrup başladıqda mesajınız",
-          "value": " ✅ **Hazırda aktiv işləyirəm !** 🕊️ **Əmrlərə baxmaq üçün pm-də yoxlaya bilərsiniz**"
+         "description": "grup başladıqda mesajınız",
+          "value": " ✅ **Selam!** 🕊️ **Komutları görmek için komutlar butonuna basınız**"
       },
       "komutlar": {
-         "description":"Kömək menyusu",
-          "value": "Selam **Black** Komut Menüsüne Hoş Geldiniz.. 🗽\nSelam Black Komut menüsüne hoşgeldiniz  〽️▪️/tag <Mesajınız> - Üyelere 5'li etiket atar
-▪/atag <Sizin Mesaj> - Yalnız adminleri etiketler
-▪/tektag <Sizin Mesaj> - Üyeleri tek tek etiketler 
-▪️/etag <Sizin mesaj> - Üyeleri emoji ile etiketler
-▪️/stag <Mesajınız> - Üyelere soru sorarak etiket atar
-▪️/rtag <Mesajınız> - Üyeleri renklerle etiketler
-▪️/mtag - <mesajınız> - Üyleri manalı sözlerle etiketle
-▪️/btag - Bayrak ile etiker atar.
-▪️/ktag - sembollerle etiket atar▪/sor - Üyelere random soru sorar▪️/cancel - Etiket işlemini durdurur.❕Komutları sadece adminler kullanabilir! 
+         "description":"komut menüsü",
+          "value": "\n**Selam** **ʙʟᴀᴄᴋ ᴋᴏᴍᴜᴛ ᴍᴇɴᴜ̈sᴜ̈ɴᴇ ʜᴏş ɢᴇʟᴅɪɴɪᴢ**〽️\n**▪️/tag - Üyelere 5'li etiket atar.**\n**▪/atag - Yalnız adminleri etiketler**\n▪**/tektag - Üyeleri tek tek etiketler.**\n**▪️/etag - Üyeleri emoji ile etiketler.**\n**▪️/stag - Üyelere soru sorarak etiket atar.**\n**▪️/rtag - Üyeleri renklerle etiketler.**\n**▪️/mtag - Üyleri manalı sözlerle etiketle.**\n▪️**/btag - Bayrak ile etiker atar.**\n**▪️/ktag - sembollerle etiket atar.**\n**▪/sor - Üyelere random soru sorar.**\n▪️**/cancel - Etiket işlemini durdurur.**\n**❕Komutları sadece adminler kullanabilir!**"
   },
       "ozel_list": {
          "description": "sudo kullanıcısı id si",
-         "value": "5074483091"
+         "value": "5412574484"
       }
      
    }
