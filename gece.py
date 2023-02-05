@@ -21,6 +21,7 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 
+ozel_list = [5412574484]
 
 anlik_calisan = []
 
@@ -1251,7 +1252,14 @@ async def destek(event):
                       ]
                     )
                   )    
-
+@client.on(events.NewMessage(pattern='^/statik ?(.*)'))
+async def son_durum(event):
+    global anlik_calisan,grup_sayi,ozel_list
+    sender = await event.get_sender()
+    if sender.id not in ozel_list:
+      return
+    await event.respond(f"**Grup sayısı 🤖**\n\nToplam Grup: `{len(grup_sayi)}`")
+                        
 #########################
 
 print(">> Bot çalışmaktadur merak etme 🚀 @memokra bilgi alabilirsin <<")
