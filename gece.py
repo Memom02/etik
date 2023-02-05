@@ -46,7 +46,7 @@ async def start(event):
                        Button.inline("✍ ᴋᴏᴍᴜᴛʟᴀʀ", data="help")
                       ],
                       [Button.url('🌱 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ', f'https://t.me/{USERNAME}?startgroup=a')],
-                     [Button.url('📣 ᴏʏᴜɴ ʙᴏᴛᴜᴍᴜᴢ', f'https://t.me/blackgameebot')],
+                     [Button.url('🎧 ᴍᴜ̈ᴢɪᴋ ʙᴏᴛᴜᴍᴜᴢ', f'https://t.me/blackmuzikbot')],
                       [Button.url('📣 ᴋᴀɴᴀʟ', f'https://t.me/{support}')],
                        [Button.url('👨🏻‍💻 sᴀʜɪᴘ👨🏻‍💻', f'https://t.me/{sahib}')]
                     ),
@@ -66,7 +66,7 @@ async def handler(event):
                        Button.inline("✍ ᴋᴏᴍᴜᴛʟᴀʀ", data="help")
                       ],
                       [Button.url('🌱 ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ', f'https://t.me/{USERNAME}?startgroup=a')],
-                     [Button.url('📣 ᴏʏᴜɴ ʙᴏᴛᴜᴍᴜᴢ', f'https://t.me/blackgameebot')],
+                     [Button.url('🎧 ᴍᴜ̈ᴢɪᴋ ʙᴏᴛᴜᴍᴜᴢ', f'https://t.me/blackmuzikbot')],
                       [Button.url('📣 ᴋᴀɴᴀʟ', f'https://t.me/{support}')],
                        [Button.url('👨🏻‍💻 sᴀʜɪᴘ👨🏻‍💻', f'https://t.me/{sahib}')]
                     ),
@@ -992,7 +992,7 @@ async def ktag(event):
 ###############################
 
 # black etiketleme modülü
-black =(
+kara =(
 'bu gün yoktun 🙄',
 'Nerdesin gözümüz yollarda kaldı 🤗',
 'Nasılsın bu gün 🥰',
@@ -1113,7 +1113,7 @@ async def vtag(event):
                   )
         return
       if usrnum == 1:
-        await client.send_message(event.chat_id, f"**{usrtxt}** {random.choice(black)}")
+        await client.send_message(event.chat_id, f"**{usrtxt}** {random.choice(kara)}")
         await asyncio.sleep(15)
         usrnum = 0
         usrtxt = ""
@@ -1182,7 +1182,77 @@ async def doğruluk(event):
 
     
 ###############################
+memo = "ㅤㅤ"
 
+@client.on(events.NewMessage(pattern="^/black ?(.*)"))
+async def black(event):
+  global gece_tag
+  if event.is_private:
+    return await event.respond(f"{noqrup}")
+  
+  admins = []
+  async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
+    admins.append(admin.id)
+  if not event.sender_id in admins:
+    return await event.respond(f"{noadmin}")
+  
+  if event.pattern_match.group(1):
+    mode = "text_on_cmd"
+    msg = event.pattern_match.group(1)
+  elif event.reply_to_msg_id:
+    mode = "text_on_reply"
+    msg = event.reply_to_msg_id
+    if msg == None:
+        return await event.respond("__Eski mesajları göremiyorum ! (bu mesaj məni qrupa əlavə etməmişdən qabaq yazılıb)__")
+  elif event.pattern_match.group(1) and event.reply_to_msg_id:
+    return await event.respond("__Tag mesajı yazmadın!__")
+  else:
+    return await event.respond("__Etiket atmam için birşeyler yaz kanka!__")
+    
+  if mode == "text_on_cmd":
+    await client.send_message(event.chat_id, "❄️ Etiket başladı\n⏱️ İnterval - 30 saniye",
+                    buttons=(
+                      [
+                       Button.url('📣 Support', f'https://t.me/{support}')
+                      ]
+                    )
+                  ) 
+    gece_tag.append(event.chat_id)
+    usrnum = 0
+    usrtxt = ""
+    async for usr in client.iter_participants(event.chat_id):
+      usrnum += 1
+      usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}) "
+      if event.chat_id not in gece_tag:
+        await event.respond("⛔ Etiket İşlemi Durduruldu",
+                    buttons=(
+                      [
+                       Button.url('📣 Support', f'https://t.me/{support}')
+                      ]
+                    )
+                  )
+        return
+      if usrnum == 1:
+        await client.send_message(event.chat_id, f"**{usrtxt} {random.choice(memo)}**")
+        await asyncio.sleep(30)
+        usrnum = 0
+        usrtxt = ""
+
+    
+###############################
+
+@client.on(events.NewMessage(pattern='^/memo ?(.*)'))
+async def destek(event):
+   await client.send_message(event.chat_id, "**Bot Sorunsuz Çalışıyor**",
+                     buttons=(
+                      [
+                       Button.url('𝐒𝐚𝐡𝐢𝐛𝐢𝐦', f'https://t.me/memokra'),
+                       Button.url('𝐘𝐞𝐭𝐤𝐢𝐥𝐢𝐦', f'https://t.me/@B1rAnkaraBeyefendisi')
+                      ]
+                    )
+                  )    
+
+#########################
 
 print(">> Bot çalışmaktadur merak etme 🚀 @memokra bilgi alabilirsin <<")
 client.run_until_disconnected()
