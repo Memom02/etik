@@ -1148,9 +1148,9 @@ async def doğruluk(event):
     if msg == None:
         return await event.respond("__Eski mesajları göremiyorum! (bu mesaj beni gruba eklemeden önce yazılmış)__")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
-    return await event.respond(f"**{random.choice(soz)}**")
+    return await event.respond(f"**{usrtxt}** {random.choice(kara)}")
   else:
-    return await event.respond(f"**{random.choice(soz)}**")
+    return await event.respond(f"**{usrtxt}** {random.choice(kara)}")
     
   if mode == "text_on_cmd":
     await client.send_message(event.chat_id, "⏱️ İnterval - 2 saniye",
