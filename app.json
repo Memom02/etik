@@ -44,7 +44,7 @@
       },
       "komutlar": {
          "description":"komut menüsü",
-          "value": "\n**Selam** **ʙʟᴀᴄᴋ ᴋᴏᴍᴜᴛ ᴍᴇɴᴜ̈sᴜ̈ɴᴇ ʜᴏş ɢᴇʟᴅɪɴɪᴢ**〽️\n**➥/tag - Üyelere 5'li etiket atar.**\n**➥/atag - Yalnız adminleri etiketler**\n**➥/tektag - Üyeleri tek tek etiketler.**\n**➥/etag - Üyeleri emoji ile etiketler.**\n**➥/stag - Üyelere soru sorarak etiket atar.**\n**➥/rtag - Üyeleri renklerle etiketler.**\n**➥/mtag - Üyleri manalı sözlerle etiketle.**\n**➥/vtag - 15 saniye de bir rastgele nerdesin nasılsın gibi random sorularla etiket arar.**\n**➥/btag - Bayrak ile etiker atar.**\n**➥/ktag - sembollerle etiket atar.**\n**➥/sor - Üyelere random soru sorar.**\n**➥/cancel - Etiket işlemini durdurur.**\n**❕Komutları sadece adminler kullanabilir!**")
+          "value": "\n**Selam** **ʙʟᴀᴄᴋ ᴋᴏᴍᴜᴛ ᴍᴇɴᴜ̈sᴜ̈ɴᴇ ʜᴏş ɢᴇʟᴅɪɴɪᴢ**〽️\n**➥/tag - Üyelere 5'li etiket atar.**\n**➥/atag - Yalnız adminleri etiketler**\n**➥/tektag - Üyeleri tek tek etiketler.**\n**➥/etag - Üyeleri emoji ile etiketler.**\n**➥/stag - Üyelere soru sorarak etiket atar.**\n**➥/rtag - Üyeleri renklerle etiketler.**\n**➥/mtag - Üyleri manalı sözlerle etiketle.**\n**➥/vtag - 15 saniye de bir rastgele nerdesin nasılsın gibi random sorularla etiket arar.**\n**➥/btag - Bayrak ile etiker atar.**\n**➥/ktag - sembollerle etiket atar.**\n**➥/sor - Üyelere random soru sorar.**\n**➥/cancel - Etiket işlemini durdurur.**\n**❕Komutları sadece adminler kullanabilir!**"
       },
       "ozel_list": {
          "description": "sudo kullanıcısı id si",
